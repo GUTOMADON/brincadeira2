@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARA O FELIPE PASSAR O TEMPO</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        #question {
+            font-size: 3.5em;
+            color: #c33c67;
+            margin-bottom: 20px;
+        }
+
+        #options {
+            display: flex;
+            gap: 20px;
+        }
+
+        .response {
+            padding: 15px 30px;
+            font-size: 1.8em;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        #yes {
+            background-color: #6ab04c;
+            color: #fff;
+        }
+
+        #no {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        #no:hover {
+            animation: flee 0.5s linear infinite;
+        }
+
+        @keyframes flee {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="question">VOCÊ ME AMA???</div>
+        <div id="options">
+            <div id="yes" class="response" onclick="openGamePage()">Sim</div>
+            <div id="no" class="response" onmouseover="flee()">Não</div>
+        </div>
+    </main>
+
+    <script>
+        function openGamePage() {
+            window.open('omgg.html', '_blank');
+        }
+
+        function flee() {
+            alert("VOCE NEM OUSA APERTAR NÃO EM FELIPE!!!!");
+        }
+    </script>
+</body>
+</html>

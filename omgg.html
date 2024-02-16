@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions de Um Gay</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cce0ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        #question {
+            font-size: 2.5em;
+            color: #3366cc;
+            margin-bottom: 20px;
+        }
+
+        #options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .response {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+        }
+
+        .response:hover {
+            background-color: #99ccff;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="question">QUEM É A MELHOR CANTORA DO MUNDO?</div>
+        <div id="options">
+            <div class="response" onclick="checkAnswer('nhe')">Lady Gaga</div>
+            <div class="response" onclick="checkAnswer('nhe2')">Anitta</div>
+            <div class="response" onclick="checkAnswer('mds')">Bjork</div>
+            <div class="response" onclick="checkAnswer('Tay')">Taylor Swift</div>
+            <div class="response" onclick="checkAnswer('nhe3')">Ariana Grande</div>
+            <div class="response" onclick="checkAnswer('nhe4')">Beyonce</div>
+            <div class="response" onclick="checkAnswer('nhe5')">Demi Lovato</div>
+        </div>
+    </main>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 'Tay') {
+                alert("AMOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+                window.location.href = 'omgg2.html';  
+            } else if (answer === 'nhe4') {
+                alert("MEU DEUS FI, ELA NEM TEM AOTY. SE MANCA VIADINHO, AQUI NÃO É TWITTER NÃO");
+            } else if (answer === 'nhe') {
+                alert("_------------> O NARIGAO DA GAGA");
+            } else if (answer === 'mds') {
+                alert("SAI DO FAKE WALT");
+            } else if (answer === 'nhe3') {
+                alert("Sim, e o charts Ari?");
+            } else if (answer === 'nhe2') {
+                alert("Rainha do Brasil. Já ouviu funk rave hoje?");
+            } else {
+                alert("CANTORA AMOR");
+            }
+        }
+    </script>
+</body>
+</html>

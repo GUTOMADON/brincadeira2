@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAYLIGHT</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff66b2, #cc0066);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        #finalMessage, #clickButton {
+            margin-bottom: 20px;
+        }
+
+        #finalMessage {
+            font-size: 2.5em;
+        }
+
+        #clickButton {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: #ff3366;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #clickButton:hover {
+            background-color: #cc0052;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="finalMessage">Parabéns! Você concluiu o questionário de hoje, nem amo bicha</div>
+        <div id="clickButton" onclick="redirectToAnotherPage()">Clique Aqui Para Ser Boiola</div>
+    </main>
+
+    <script>
+        function redirectToAnotherPage() {
+            window.open('https://www.youtube.com/watch?v=u9raS7-NisU', '_blank');
+        }
+    </script>
+</body>
+</html>
